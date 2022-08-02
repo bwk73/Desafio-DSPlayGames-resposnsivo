@@ -1,0 +1,420 @@
+/* ELEMENTS */
+
+:root {
+  --color-green: #38af90;
+  --color-white: #fff;
+  --color-gray: #797979;
+  --color-light-gray: #f0f0f0;
+  --color-pink: #dd7e92;
+  --color-dark-gray: #383838;
+  --color-placeholder: #C4C4C4;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: var(--color-dark-gray);
+  height: 18.875rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 35px;
+}
+
+footer a,
+p {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* CLASSes, IDs */
+
+.nav-container {
+  background-color: var(--color-green);
+  height: 90px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+}
+
+.nav-main {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  display: flex;
+  padding: 14px 10px;
+}
+
+.nav-brand {
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.menu-items {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items a,
+li {
+  width: 100%;
+  margin: 0 auto;
+  display: inline;
+  justify-content: space-between;
+  color: var(--color-green);
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+  pointer-events: none;
+}
+
+#news {
+  background-color: var(--color-white);
+  width: 100%;
+  margin: 0 auto;
+  max-width: 990px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.news-title {
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0.5rem 0;
+}
+
+.news-card {
+  background-color: var(--color-light-gray);
+  max-width: 990px;
+  height: 30.8125rem;
+  width: 18.75rem;
+  padding: 16px 12px 12px 12px;
+  margin: 0.5rem 0.625rem 1.25rem 0.625rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.news-card img {
+  width: 17.235rem;
+}
+
+.news-card p {
+  color: var(--color-gray);
+  font-size: 10px;
+}
+
+.news-card h3 {
+  color: var(--color-green);
+  font-size: 1rem;
+}
+
+.news-card a {
+  color: var(--color-pink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.news-card h4 {
+  color: var(--color-gray);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.news-card h5 {
+  color: var(--color-green);
+  font-size: 10px;
+}
+
+.load-button input {
+  height: 67px;
+  width: 244px;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin: 28px 38px 40px 38px;
+  border-radius: 8px;
+}
+
+#games {
+  background-color: var(--color-light-gray);
+  width: 100%;
+  margin: 0 auto;
+  max-width: 990px;
+  padding: 40px 10px 26.5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.games-title {
+  color: var(--color-green);
+  font-size: 1.5rem;
+  margin: 0 123px 16px 122px;
+}
+
+.games-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.games-card {
+  background-color: var(--color-white);
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  margin: 1.6875rem 0.625rem;
+}
+
+.games-card img {
+  max-width: 300px;
+  border-radius: 8px 8px 0 0;
+}
+
+.games-card h3 {
+  color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  font-style: 18px;
+}
+
+.games-card span {
+  color: var(--color-green);
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.games-card p {
+  color: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.games-card h4 {
+  color: var(--color-green);
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
+
+#register {
+  background-color: var(--color-white);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-title {
+  color: var(--color-gray);
+  margin: 2.5rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.register-card {
+  background-color: var(--color-light-gray);
+  width: 18.75rem;
+  height: 37.6875rem;
+  padding: 52px 12px 33px 8px;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.register-card-gap {
+  height: 50px;
+  width: 17.5rem;
+  margin: 20px 0;
+}
+
+.register-card-gap input {
+  width: 17.5rem;
+  height: 50px;
+  margin: 0.625rem 0 0.625rem 0;
+  padding: 13px 0 13px 22px;
+  font-size: 16px;
+  color: var(--color-placeholder);
+}
+
+.register-card-quiz {
+  padding: 20px 8px;
+}
+
+.register-card-wish {
+  padding: 16px 8px;
+}
+
+.register-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-button input {
+  margin-bottom: 20px;
+  width: 244px;
+  height: 67px;
+  color: var(--color-light-gray);
+  background-color: var(--color-pink);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.reset-button input {
+  width: 244px;
+  height: 67px;
+  color: var(--color-pink);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-pink);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-rights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.footer-politics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav-brand {
+    font-size: 1.5rem;
+  }
+
+  .menu-items a,
+  li {
+    width: 100%;
+    margin: 0 auto;
+    display: inline;
+    justify-content: space-between;
+    color: var(--color-white);
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+    pointer-events: visible;
+  }
+
+  .news-title {
+    font-size: 2.25rem;
+    margin: 2.5rem 0;
+  }
+
+  .news-card {
+    height: 15.4375rem;
+    width: 61.875rem;
+    padding: 1rem 2.5rem 0.9375rem 2.5rem;
+    margin: 1.25rem 6.5625rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  }
+
+  .news-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .news-card img {
+    width: 56.875rem;
+  }
+
+  .games-title {
+    color: var(--color-green);
+    font-size: 2.25rem;
+    margin: 0 34.125rem 0.1875rem 33.875rem;
+  }
+
+  .games-container {
+    max-width: 990px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .games-card {
+    margin: 4.375rem 1.875rem;
+  }
+
+  .register-title {
+    margin: 2.4375rem 0 2.5rem 0;
+    font-size: 2.25rem;
+  }
+
+  .register-card {
+    width: 49.375rem;
+    height: 32.625rem;
+    padding: 52px 12px 33px 8px;
+    margin-bottom: 40px;
+  }
+
+  .register-card-gap input {
+    width: 40.125rem;
+    height: 50px;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    padding: 13px 22px;
+  }
+
+  .register-card form {
+    margin: 0 4.625rem;
+  }
+
+  .register-card-quiz {
+    margin: 0 4.625rem;
+  }
+
+  .register-card-wish {
+    margin: 0 4.625rem;
+  }
+
+  .register-button {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .submit-button input {
+    margin-bottom: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
